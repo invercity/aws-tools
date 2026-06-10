@@ -4,6 +4,7 @@ import config from '../../shared/config/index.js';
 import { loadJsonFile } from '../../shared/utils/index.js';
 import { ClassifierService, ClassifierInputSchema } from './services/ClassifierService.js';
 import { OpenAIProvider } from './providers/OpenAIProvider.js';
+import { GeminiProvider } from './providers/GeminiProvider.js';
 import { MockProvider } from './providers/MockProvider.js';
 
 const program = new Command();
@@ -35,6 +36,8 @@ async function run() {
     let provider;
     if (config.aiProvider === 'openai' && config.openai.apiKey) {
       provider = new OpenAIProvider(config);
+    } else if (config.aiProvider === 'gemini' && config.gemini.apiKey) {
+      provider = new GeminiProvider(config);
     } else {
       provider = new MockProvider();
       logger.info('Using Mock AI Provider');
