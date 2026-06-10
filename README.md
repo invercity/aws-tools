@@ -47,6 +47,10 @@ node notification-handler/src/run.js --input notification-handler/sample/events.
 npm run test
 ```
 
+## Video with description:
+[classifier-summerizer](https://drive.google.com/file/d/1Hr4vUCl6jpjYUyK3rdVbOdwSK0ylNIbr/view?usp=sharing)
+[notification-handler](https://drive.google.com/file/d/1_fcJvDzj4aEwAkCNTVbFIw3K0W_ucNjs/view?usp=sharing)
+
 ## Architecture Overview
 
 - **Clean Architecture:** Business logic is separated from infrastructure and delivery mechanisms. Services and Handlers contain core logic, while Providers and Repositories handle external integrations.
