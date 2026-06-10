@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "content": "Dear customer, your invoice for the month of May is now available in your portal. Please ensure payment by the end of this week to avoid late fees."
+  },
+  {
+    "id": 2,
+    "content": "Hi Team, we are experiencing some latency in our production API. The engineering team is investigating the root cause. We will keep you updated."
+  },
+  {
+    "id": 3,
+    "content": "Subject: New policy regarding remote work. Please find attached the updated guidelines for all HR related matters."
+  },
+  {
+    "id": 4,
+    "content": ""
+  },
+  {
+    "id": 5,
+    "content": "Check out our latest summer collection! Get up to 50% off on selected items if you order before June 15th."
+  }
+]

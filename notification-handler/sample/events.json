@@ -1,0 +1,61 @@
+[
+  {
+    "event_id": "dedupe-1",
+    "type": "user.registered",
+    "payload": {
+      "email": "john.doe@example.com",
+      "roles": "admin, editor",
+      "registered_at": "2021-04-01"
+    }
+  },
+  {
+    "event_id": "dedupe-1",
+    "type": "user.registered",
+    "payload": {
+      "email": "john.doe@example.com",
+      "roles": "admin, editor",
+      "registered_at": "2021-04-01"
+    }
+  },
+  {
+    "event_id": "unique-2",
+    "type": "password.reset",
+    "payload": {
+      "email": "jane.smith@example.com",
+      "requested_at": "2023-05-10T15:30:00Z"
+    }
+  },
+  {
+    "event_id": "invalid-email-3",
+    "type": "user.registered",
+    "payload": {
+      "email": "invalid-email",
+      "roles": "viewer",
+      "registered_at": "2023-05-11"
+    }
+  },
+  {
+    "event_id": "null-roles-4",
+    "type": "user.registered",
+    "payload": {
+      "email": "bob@example.com",
+      "roles": null,
+      "registered_at": "2023-05-12"
+    }
+  },
+  {
+    "event_id": "unknown-5",
+    "type": "unknown_type",
+    "payload": {
+      "email": "test@example.com"
+    }
+  },
+  {
+    "event_id": "deleted-6",
+    "type": "user.deleted",
+    "payload": {
+      "email": "old.user@example.com",
+      "deleted_at": "June 10, 2026"
+    }
+  }
+]
